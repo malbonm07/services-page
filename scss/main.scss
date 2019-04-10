@@ -1,0 +1,126 @@
+/*##########################    BASE     #############################################*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*##########################  VARIABLES  #############################################*/
+
+/* Colors */
+$primary-color: #212E3F;
+$body-color: white;
+$secondary-color: #FCBE46;
+$tertiary-color: #F0F0DE;
+$main-black: #222;
+/* Colors */
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+$body-font: 'Roboto';
+$h1-font-size: 96px;
+$h2-font-size: 60px;
+$h3-font-size: 48px;
+$h4-font-size: 34px;
+$h5-font-size: 24px;
+$h6-font-size: 20px;
+
+$body1-font-size: 16px;
+$body2-font-size: 14px;
+$caption-font-size: 12px;
+
+$main-spacing: 5px;
+/* FONTS */
+
+
+/*###########################     BODY    ############################################*/
+
+
+body {
+  background: $body-color;
+  padding: 0;
+  margin: 0;
+  font-family: $body-font;
+}
+/*###########################     BODY    ############################################*/
+
+/*###########################     navbar    ############################################*/
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: $tertiary-color;
+  z-index: 1;
+}
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  &__title {
+    span {
+      color: $secondary-color;
+    }
+  }
+}
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: $secondary-color;
+  padding: 0 5px;
+  border-radius: 40%;
+  color: $body-color;
+}
+/*###########################     navbar    ############################################*/
+
+/*###########################     hero    ############################################*/
+  .hero {
+    min-height: calc(100vh - 60px);
+    background: url('https://images.pexels.com/photos/210463/pexels-photo-210463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    padding: 2rem;
+  }
+  .banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: $main-spacing;
+    margin-bottom: 3rem;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: $main-spacing;
+    font-size: 1rem;
+    background: $secondary-color;
+    color: $main-black;
+    border: 1px solid $secondary-color;
+    transition: .3s;
+    cursor: pointer;
+  }
+/*###########################     hero    ############################################*/

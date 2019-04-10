@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*##########################    BASE     #############################################*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*##########################  VARIABLES  #############################################*/
+/* Colors */
+/* Colors */
+/* FONTS */
+/* FONTS */
+/*###########################     BODY    ############################################*/
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto"; }
+
+/*###########################     BODY    ############################################*/
+/*###########################     navbar    ############################################*/
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #F0F0DE;
+  z-index: 1; }
+
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem; }
+  .navbar-center__title span {
+    color: #FCBE46; }
+
+.nav-icon  {
+  font-size: 1.5rem; }
+
+.cart-btn {
+  position: relative;
+  cursor: pointer; }
+
+.cart-items {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: #FCBE46;
+  padding: 0 5px;
+  border-radius: 40%;
+  color: white; }
+
+/*###########################     navbar    ############################################*/
+/*###########################     hero    ############################################*/
+.hero {
+  min-height: calc(100vh - 60px);
+  background: url("https://images.pexels.com/photos/210463/pexels-photo-210463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem; }
+
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 3rem; }
+
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  background: #FCBE46;
+  color: #222;
+  border: 1px solid #FCBE46;
+  transition: .3s;
+  cursor: pointer; }
+
+/*###########################     hero    ############################################*/
