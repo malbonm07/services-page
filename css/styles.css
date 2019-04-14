@@ -28,7 +28,8 @@ body {
   display: flex;
   align-items: center;
   background: #F0F0DE;
-  z-index: 1; }
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(154, 157, 120, 0.5); }
 
 .navbar-center {
   width: 100%;
