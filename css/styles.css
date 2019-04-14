@@ -57,7 +57,7 @@ body {
   border-radius: 40%;
   color: white; }
 
-/*###########################     navbar    ############################################*/
+/*###########################     end navbar    ############################################*/
 /*###########################     hero    ############################################*/
 .hero {
   min-height: calc(100vh - 60px);
@@ -89,6 +89,173 @@ body {
   color: #222;
   border: 1px solid #FCBE46;
   transition: .3s;
+  cursor: pointer;
+  font-weight: bold; }
+
+.banner-btn:hover {
+  background: transparent;
+  color: #FCBE46; }
+
+/*###########################     end hero    ############################################*/
+/*###########################     PRODUCTS    ############################################*/
+.products {
+  padding: 4rem 0; }
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: 5px; }
+
+.products-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem; }
+
+.img-container  {
+  position: relative;
+  overflow: hidden; }
+
+.bag-btn {
+  position: absolute;
+  top: 200%;
+  right: 4%;
+  background: #FCBE46;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  transform: translateX(101%);
   cursor: pointer; }
 
-/*###########################     hero    ############################################*/
+.bag-btn:hover {
+  color: white; }
+
+.fa-shopping-cart {
+  margin-right: 0.5rem; }
+
+.img-container:hover .bag-btn {
+  transform: translateX(-5%); }
+
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: all 0.3s linear; }
+
+.img-container:hover .product-img {
+  opacity: 0.5; }
+
+.product h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: 5px;
+  text-align: center; }
+
+.product h4 {
+  margin-top: 0.7rem;
+  letter-spacing: 5px;
+  color: #FCBE46;
+  text-align: center; }
+
+/*###########################     END PRODUCTS    ############################################*/
+/*###########################     CART    ############################################*/
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: all 0.3s linear;
+  background: rgba(240, 157, 81, 0.5);
+  z-index: 2;
+  visibility: hidden; }
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /*overflow: scroll;*/
+  background: white;
+  z-index: 3;
+  background: #e7e2dd;
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  margin: 0;
+  transform: translateX(100%); }
+
+.showCart {
+  transform: translateX(0); }
+
+.transparentBcg {
+  visibility: visible; }
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    width: 450px; } }
+
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer; }
+
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 2rem; }
+
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0; }
+
+.cart-item img {
+  width: 75px;
+  height: 75px; }
+
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: 5px; }
+
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: white; }
+
+.item-amount {
+  text-align: center; }
+
+.remove-item:hover {
+  color: grey;
+  cursor: pointer; }
+
+.fa-chevron-up,
+.fa-chevron-down {
+  color: #FCBE46;
+  cursor: pointer; }
+
+/*###########################    END CART ITEM    ############################################*/
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: 5px;
+  text-align: center; }
+
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem; }
+
+/*###########################     END CART    ############################################*/
