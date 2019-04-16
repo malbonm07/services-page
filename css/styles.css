@@ -6,6 +6,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
 /*##########################  VARIABLES  #############################################*/
 /* Colors */
 /* Colors */
@@ -183,6 +189,51 @@ body {
   text-align: center; }
 
 /*###########################     END PRODUCTS    ############################################*/
+/*###########################     FOOTER    ############################################*/
+.footer {
+  background: #72828c; }
+
+.social-footer {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem; }
+  .social-footer__box {
+    padding: 1.5rem 0; }
+    .social-footer__box-title {
+      line-height: 4rem;
+      text-transform: uppercase; }
+    .social-footer__box-list a {
+      color: #222;
+      font-size: 1.2rem;
+      line-height: 2rem; }
+    .social-footer__box-list a:hover {
+      color: white; }
+
+.social__item {
+  font-size: 2rem;
+  padding: 5px;
+  color: #222;
+  border-radius: 50%;
+  transition: .3s; }
+
+.social__item:hover {
+  color: white; }
+
+.rights-reserved {
+  line-height: 4rem;
+  background: #212E3F; }
+  .rights-reserved__description {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    color: white;
+    letter-spacing: 5px; }
+
+/*###########################     END FOOTER    ############################################*/
 /*###########################     CART    ############################################*/
 .cart-overlay {
   position: fixed;

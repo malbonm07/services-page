@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 /*##########################  VARIABLES  #############################################*/
 
 /* Colors */
@@ -224,6 +230,69 @@ body {
     text-align: center;
   }
 /*###########################     END PRODUCTS    ############################################*/
+
+/*###########################     FOOTER    ############################################*/
+
+  .footer {
+    background: #72828c;
+  }
+  .footer-center {
+
+  }
+  .social-footer {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+
+    &__box {
+      padding: 1.5rem 0;
+
+      &-title {
+        line-height: 4rem;
+        text-transform: uppercase;
+      }
+      &-list {
+        a {
+          color: $main-black;
+          font-size: 1.2rem;
+          line-height: 2rem;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .social {
+    &__item {
+      font-size: 2rem;
+      padding: 5px;
+      color: $main-black;
+      border-radius: 50%;
+      transition: .3s;
+    }
+    &__item:hover {
+      color: white;
+    }
+  }
+  .rights-reserved {
+    line-height: 4rem;
+    background: #212E3F;
+    &__description {
+      width: 90vw;
+      margin: 0 auto;
+      max-width: 1170px;
+      color: white;
+      letter-spacing: $main-spacing;
+    }
+  }
+
+/*###########################     END FOOTER    ############################################*/
+
 
 /*###########################     CART    ############################################*/
   .cart-overlay {
