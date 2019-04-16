@@ -101,11 +101,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 2s;
+    // animation-duration: 3s;
   }
   .banner {
     text-align: center;
     background: rgba(255,255,255,0.7);
     padding: 2rem;
+    animation-duration: 5s;
   }
   .banner-title {
     font-size: 3.4rem;
@@ -121,7 +124,6 @@ body {
     background: $secondary-color;
     color: $main-black;
     border: 1px solid $secondary-color;
-    transition: .3s;
     cursor: pointer;
     font-weight: bold;
   }
@@ -129,12 +131,31 @@ body {
     background: transparent;
     color: $secondary-color;
   }
+  .fadeIn {
+    animation-name: fadeIn;
+    // animation-duration: 5s
+  }
+
+  @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
 /*###########################     end hero    ############################################*/
 
 /*###########################     PRODUCTS    ############################################*/
 
   .products {
     padding: 4rem 0;
+  }
+  .product {
+    position: relative;
+    overflow: hidden;
   }
   .section-title h2 {
     text-align: center;
@@ -158,8 +179,8 @@ body {
   }
   .bag-btn {
     position: absolute;
-    top: 200%;
-    right: 4%;
+    top: 60%;
+    right: 0%;
     background: $secondary-color;
     border: none;
     text-transform: uppercase;
@@ -169,6 +190,7 @@ body {
     transition: $main-transition;
     transform: translateX(101%);
     cursor: pointer;
+    outline: none;
   }
   .bag-btn:hover {
     color: $body-color;
@@ -224,7 +246,7 @@ body {
     height: 100%;
     /*overflow: scroll;*/
     background: $body-color;
-    z-index: 3;
+    z-index: 10;
     background: rgb(231,226,221);
     padding: 1.5rem;
     transition: $main-transition;
